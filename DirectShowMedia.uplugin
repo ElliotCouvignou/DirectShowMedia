@@ -1,0 +1,39 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "DirectShowMedia",
+	"Description": "",
+	"Category": "Other",
+	"CreatedBy": "",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "DirectShowMedia",
+			"Type": "Runtime",
+			"LoadingPhase": "PostConfigInit",
+			"WhitelistPlatforms": [ "Mac", "Win64", "Android" ]
+		},
+		{
+			"Name": "DirectShowMediaFactory",
+			"Type": "RuntimeNoCommandlet",
+			"LoadingPhase": "PostEngineInit",
+			"PlatformAllowList": [ "Mac", "Linux", "Win64" ],
+			"TargetDenyList": [ "Server" ]
+		}
+	],
+	"Dependencies": [
+		{
+			"Name": "FFMPEGMedia",
+			"Type": "Runtime",
+			"Optional": false
+		}
+	]
+}
